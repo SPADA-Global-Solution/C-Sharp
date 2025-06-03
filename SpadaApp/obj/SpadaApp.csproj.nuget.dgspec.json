@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joaop\\OneDrive\\Área de Trabalho\\facul\\C#\\SpadaApp\\SpadaApp.csproj": {}
+    "C:\\Users\\joaop\\OneDrive\\Área de Trabalho\\facul\\C-Sharp\\SpadaApp\\SpadaApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joaop\\OneDrive\\Área de Trabalho\\facul\\C#\\SpadaApp\\SpadaApp.csproj": {
+    "C:\\Users\\joaop\\OneDrive\\Área de Trabalho\\facul\\C-Sharp\\SpadaApp\\SpadaApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joaop\\OneDrive\\Área de Trabalho\\facul\\C#\\SpadaApp\\SpadaApp.csproj",
+        "projectUniqueName": "C:\\Users\\joaop\\OneDrive\\Área de Trabalho\\facul\\C-Sharp\\SpadaApp\\SpadaApp.csproj",
         "projectName": "SpadaApp",
-        "projectPath": "C:\\Users\\joaop\\OneDrive\\Área de Trabalho\\facul\\C#\\SpadaApp\\SpadaApp.csproj",
+        "projectPath": "C:\\Users\\joaop\\OneDrive\\Área de Trabalho\\facul\\C-Sharp\\SpadaApp\\SpadaApp.csproj",
         "packagesPath": "C:\\Users\\joaop\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joaop\\OneDrive\\Área de Trabalho\\facul\\C#\\SpadaApp\\obj\\",
+        "outputPath": "C:\\Users\\joaop\\OneDrive\\Área de Trabalho\\facul\\C-Sharp\\SpadaApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

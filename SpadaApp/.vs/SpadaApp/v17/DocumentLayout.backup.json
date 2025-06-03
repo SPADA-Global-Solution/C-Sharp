@@ -1,38 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\",
+  "WorkspaceRootPath": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C-Sharp\\SpadaApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|c:\\users\\joaop\\onedrive\\\u00E1rea de trabalho\\facul\\c#\\spadaapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|c:\\users\\joaop\\onedrive\\\u00E1rea de trabalho\\facul\\c-sharp\\spadaapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|c:\\users\\joaop\\onedrive\\\u00E1rea de trabalho\\facul\\c#\\spadaapp\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|c:\\users\\joaop\\onedrive\\\u00E1rea de trabalho\\facul\\c-sharp\\spadaapp\\inputhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|solutionrelative:inputhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|c:\\users\\joaop\\onedrive\\\u00E1rea de trabalho\\facul\\c-sharp\\spadaapp\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|solutionrelative:userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|c:\\users\\joaop\\onedrive\\\u00E1rea de trabalho\\facul\\c#\\spadaapp\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|c:\\users\\joaop\\onedrive\\\u00E1rea de trabalho\\facul\\c#\\spadaapp\\checklistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|solutionrelative:checklistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|c:\\users\\joaop\\onedrive\\\u00E1rea de trabalho\\facul\\c#\\spadaapp\\incident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|solutionrelative:incident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|c:\\users\\joaop\\onedrive\\\u00E1rea de trabalho\\facul\\c#\\spadaapp\\incidentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|solutionrelative:incidentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|c:\\users\\joaop\\onedrive\\\u00E1rea de trabalho\\facul\\c#\\spadaapp\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|solutionrelative:reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|c:\\users\\joaop\\onedrive\\\u00E1rea de trabalho\\facul\\c#\\spadaapp\\riskevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|solutionrelative:riskevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,106 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\UserService.cs",
-              "RelativeDocumentMoniker": "UserService.cs",
-              "ToolTip": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\UserService.cs",
-              "RelativeToolTip": "UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAANAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C-Sharp\\SpadaApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C-Sharp\\SpadaApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAzwB4AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T18:28:54.871Z",
+              "WhenOpened": "2025-06-03T03:32:00.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InputHelper.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C-Sharp\\SpadaApp\\InputHelper.cs",
+              "RelativeDocumentMoniker": "InputHelper.cs",
+              "ToolTip": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C-Sharp\\SpadaApp\\InputHelper.cs",
+              "RelativeToolTip": "InputHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T03:31:22.393Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\User.cs",
-              "RelativeDocumentMoniker": "User.cs",
-              "ToolTip": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\User.cs",
-              "RelativeToolTip": "User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAANAAAAAAAAAA==",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C-Sharp\\SpadaApp\\UserService.cs",
+              "RelativeDocumentMoniker": "UserService.cs",
+              "ToolTip": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C-Sharp\\SpadaApp\\UserService.cs",
+              "RelativeToolTip": "UserService.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAmwHoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T18:25:16.083Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAYwIsAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T06:27:50.112Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RiskEvaluator.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\RiskEvaluator.cs",
-              "RelativeDocumentMoniker": "RiskEvaluator.cs",
-              "ToolTip": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\RiskEvaluator.cs",
-              "RelativeToolTip": "RiskEvaluator.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAUwCkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T06:27:40.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ReportService.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\ReportService.cs",
-              "RelativeDocumentMoniker": "ReportService.cs",
-              "ToolTip": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\ReportService.cs",
-              "RelativeToolTip": "ReportService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T06:27:29.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IncidentService.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\IncidentService.cs",
-              "RelativeDocumentMoniker": "IncidentService.cs",
-              "ToolTip": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\IncidentService.cs",
-              "RelativeToolTip": "IncidentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T06:27:20.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ChecklistItem.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\ChecklistItem.cs",
-              "RelativeDocumentMoniker": "ChecklistItem.cs",
-              "ToolTip": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\ChecklistItem.cs",
-              "RelativeToolTip": "ChecklistItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T06:27:00.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Incident.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\Incident.cs",
-              "RelativeDocumentMoniker": "Incident.cs",
-              "ToolTip": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\Incident.cs",
-              "RelativeToolTip": "Incident.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T06:26:44.89Z",
+              "WhenOpened": "2025-06-02T19:17:02.357Z",
               "EditorCaption": ""
             }
           ]

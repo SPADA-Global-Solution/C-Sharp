@@ -3,35 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 
 /// <summary>
-/// Classe principal do sistema SPADA.
-/// Responsável por gerenciar o fluxo de autenticação do usuário e exibir o menu de funcionalidades.
+/// Classe principal do sistema SPADA (Sistema de Prevenção e Apoio em Desastres e Acidentes).
+/// Responsável por gerenciar a interação com o usuário via console e orquestrar as funcionalidades
+/// de autenticação, registro de acidentes, geração de relatórios, avaliação de risco, dicas de prevenção e checklist.
 /// </summary>
 class Program
 {
     /// <summary>
-    /// Serviço responsável pelo gerenciamento de usuários.
+    /// Serviço de gerenciamento de usuários, incluindo autenticação, registro e persistência.
     /// </summary>
     static UserService userService = new UserService();
 
     /// <summary>
-    /// Usuário atualmente autenticado no sistema.
+    /// Usuário atualmente autenticado na aplicação.
     /// </summary>
     static User? currentUser = null;
 
     /// <summary>
-    /// Método principal da aplicação. 
-    /// Executa o fluxo de autenticação e apresenta o menu com as opções do sistema.
+    /// Método principal da aplicação. Realiza a autenticação do usuário e exibe o menu de funcionalidades.
     /// </summary>
-    /// <param name="args">Argumentos de linha de comando (não utilizados).</param>
     static void Main(string[] args)
     {
-        userService.LoadUsers(); // Carrega usuários salvos anteriormente.
+        userService.LoadUsers();  // Carrega usuários salvos previamente.
 
         Console.WriteLine("Bem-vindo ao SPADA!");
 
         bool autenticado = false;
 
-        // Loop de autenticação até que o usuário esteja autenticado com sucesso.
+        // Loop de autenticação: até que o usuário efetue login ou cadastro.
         while (!autenticado)
         {
             Console.WriteLine("1. Login");
@@ -55,7 +54,6 @@ class Program
             }
         }
 
-        // Verifica se o usuário foi autenticado com sucesso.
         if (currentUser == null)
         {
             Console.WriteLine("Erro: usuário não autenticado. Encerrando.");
@@ -66,7 +64,7 @@ class Program
 
         try
         {
-            // Loop do menu principal
+            // Loop principal do menu de funcionalidades.
             do
             {
                 Console.Clear();
@@ -77,15 +75,9 @@ class Program
                 Console.WriteLine("4. Dicas de Prevenção");
                 Console.WriteLine("5. Checklist de Preparação");
                 Console.WriteLine("0. Sair");
-                Console.Write("Escolha uma opção: ");
 
-                string? inputMenu = Console.ReadLine();
-                if (!int.TryParse(inputMenu, out opcao))
-                {
-                    opcao = -1; // Define como inválida se a conversão falhar.
-                }
+                opcao = InputHelper.ReadInt("Escolha uma opção: ");
 
-                // Executa a funcionalidade conforme a escolha do usuário.
                 switch (opcao)
                 {
                     case 1: RegistrarAcidente(); break;
@@ -97,8 +89,12 @@ class Program
                     default: Console.WriteLine("Opção inválida."); break;
                 }
 
-                Console.WriteLine("\nPressione qualquer tecla para continuar...");
-                Console.ReadKey();
+                // Aguarda interação antes de retornar ao menu.
+                if (opcao != 0)
+                {
+                    Console.WriteLine("\nPressione qualquer tecla para voltar ao menu...");
+                    Console.ReadKey();
+                }
 
             } while (opcao != 0);
         }
@@ -107,29 +103,22 @@ class Program
             Console.WriteLine($"Erro inesperado: {ex.Message}");
         }
 
-        userService.SaveUsers(); // Salva as alterações nos dados dos usuários.
+        // Salva alterações nos dados dos usuários antes de encerrar.
+        userService.SaveUsers();
     }
 
     /// <summary>
-    /// Registra um novo incidente no perfil do usuário atual.
+    /// Permite ao usuário logado registrar um novo incidente, informando tipo e descrição.
     /// </summary>
     static void RegistrarAcidente()
     {
-        if (currentUser == null)
-        {
-            Console.WriteLine("Nenhum usuário logado.");
-            return;
-        }
+        if (currentUser == null) return;
 
         try
         {
-            Console.Write("Tipo de Acidente (Queda/Incêndio/Outro): ");
-            string tipo = Console.ReadLine() ?? "";
+            string tipo = InputHelper.ReadNonEmptyString("Tipo de Acidente (Queda/Incêndio/Outro): ");
+            string desc = InputHelper.ReadNonEmptyString("Descrição: ");
 
-            Console.Write("Descrição: ");
-            string desc = Console.ReadLine() ?? "";
-
-            // Adiciona o incidente à lista do usuário.
             currentUser.Incidents.Add(new Incident
             {
                 Date = DateTime.Now,
@@ -137,6 +126,7 @@ class Program
                 Description = desc
             });
 
+            userService.SaveUsers();
             Console.WriteLine("Incidente registrado com sucesso!");
         }
         catch (Exception ex)
@@ -146,22 +136,16 @@ class Program
     }
 
     /// <summary>
-    /// Gera um relatório com a contagem de cada tipo de incidente registrado pelo usuário.
+    /// Gera e exibe um relatório agrupado de todos os incidentes registrados pelo usuário.
     /// </summary>
     static void GerarRelatorio()
     {
-        if (currentUser == null)
-        {
-            Console.WriteLine("Nenhum usuário logado.");
-            return;
-        }
+        if (currentUser == null) return;
 
         try
         {
             Console.WriteLine("Relatório de Incidentes:");
-
-            // Agrupa e conta os incidentes por tipo.
-            foreach (var grupo in currentUser.Incidents.GroupBy(i => i.Type.Trim().ToUpper()))
+            foreach (var grupo in currentUser.Incidents.GroupBy(i => i.Type))
             {
                 Console.WriteLine($"{grupo.Key}: {grupo.Count()} ocorrência(s)");
             }
@@ -177,19 +161,12 @@ class Program
     /// </summary>
     static void AvaliarRisco()
     {
-        if (currentUser == null)
-        {
-            Console.WriteLine("Nenhum usuário logado.");
-            return;
-        }
+        if (currentUser == null) return;
 
         try
         {
             int count = currentUser.Incidents.Count;
-
-            // Define o nível de risco conforme a quantidade de incidentes.
             string risco = count < 3 ? "Baixo" : count < 6 ? "Moderado" : "Alto";
-
             Console.WriteLine($"Seu nível de risco é: {risco}");
         }
         catch (Exception ex)
@@ -199,21 +176,15 @@ class Program
     }
 
     /// <summary>
-    /// Mostra dicas de prevenção com base nos tipos de incidentes registrados pelo usuário.
+    /// Exibe dicas de prevenção com base nos tipos de incidentes registrados pelo usuário.
     /// </summary>
     static void MostrarDicas()
     {
-        if (currentUser == null)
-        {
-            Console.WriteLine("Nenhum usuário logado.");
-            return;
-        }
+        if (currentUser == null) return;
 
         try
         {
             Console.WriteLine("Dicas de Prevenção:");
-
-            // Exibe dicas personalizadas conforme incidentes.
             if (currentUser.Incidents.Exists(i => i.Type == "Incêndio"))
                 Console.WriteLine("- Evite acender velas próximas a cortinas.");
             if (currentUser.Incidents.Exists(i => i.Type == "Queda"))
@@ -230,33 +201,25 @@ class Program
     /// </summary>
     static void ExibirChecklist()
     {
-        if (currentUser == null)
-        {
-            Console.WriteLine("Nenhum usuário logado.");
-            return;
-        }
+        if (currentUser == null) return;
 
         try
         {
             Console.WriteLine("Checklist de Preparação para Apagões:");
-
-            // Exibe cada item do checklist com seu status.
             for (int i = 0; i < currentUser.Checklist.Count; i++)
             {
                 Console.WriteLine($"[{(currentUser.Checklist[i].IsCompleted ? "X" : " ")}] {i + 1}. {currentUser.Checklist[i].Description}");
             }
 
             Console.Write("Deseja marcar algum item como concluído? (s/n): ");
-            string resposta = Console.ReadLine() ?? "n";
-
-            if (resposta.ToLower() == "s")
+            string resposta = Console.ReadLine()?.ToLower() ?? "n";
+            if (resposta == "s")
             {
-                Console.Write("Informe o número do item: ");
-                string? input = Console.ReadLine();
-
-                if (int.TryParse(input, out int item) && item > 0 && item <= currentUser.Checklist.Count)
+                int item = InputHelper.ReadInt("Informe o número do item: ");
+                if (item > 0 && item <= currentUser.Checklist.Count)
                 {
                     currentUser.Checklist[item - 1].IsCompleted = true;
+                    userService.SaveUsers();
                     Console.WriteLine("Item marcado como concluído.");
                 }
                 else

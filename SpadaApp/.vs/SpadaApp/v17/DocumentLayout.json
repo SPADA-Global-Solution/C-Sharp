@@ -1,9 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\",
+  "WorkspaceRootPath": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C-Sharp\\SpadaApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|c:\\users\\joaop\\onedrive\\\u00E1rea de trabalho\\facul\\c#\\spadaapp\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|c:\\users\\joaop\\onedrive\\\u00E1rea de trabalho\\facul\\c-sharp\\spadaapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|c:\\users\\joaop\\onedrive\\\u00E1rea de trabalho\\facul\\c-sharp\\spadaapp\\inputhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|solutionrelative:inputhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|c:\\users\\joaop\\onedrive\\\u00E1rea de trabalho\\facul\\c-sharp\\spadaapp\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A89B8021-64A2-4FAF-99AD-061E0C773F71}|SpadaApp.csproj|solutionrelative:userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,24 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\UserService.cs",
-              "RelativeDocumentMoniker": "UserService.cs",
-              "ToolTip": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C#\\SpadaApp\\UserService.cs",
-              "RelativeToolTip": "UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T19:17:02.357Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C-Sharp\\SpadaApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C-Sharp\\SpadaApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAzwB4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T03:32:00.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InputHelper.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C-Sharp\\SpadaApp\\InputHelper.cs",
+              "RelativeDocumentMoniker": "InputHelper.cs",
+              "ToolTip": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C-Sharp\\SpadaApp\\InputHelper.cs",
+              "RelativeToolTip": "InputHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T03:31:22.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C-Sharp\\SpadaApp\\UserService.cs",
+              "RelativeDocumentMoniker": "UserService.cs",
+              "ToolTip": "C:\\Users\\joaop\\OneDrive\\\u00C1rea de Trabalho\\facul\\C-Sharp\\SpadaApp\\UserService.cs",
+              "RelativeToolTip": "UserService.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAmwHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T19:17:02.357Z",
+              "EditorCaption": ""
             }
           ]
         }

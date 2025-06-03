@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpadaApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac6edbab4535385c6d0ee98441e724396533c208")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+477a430673aca7cdddbbe5cb9f3f9b3b1ef2667d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpadaApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpadaApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

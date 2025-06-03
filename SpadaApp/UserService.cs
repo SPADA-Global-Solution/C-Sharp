@@ -4,24 +4,24 @@ using System.IO;
 using System.Text.Json;
 
 /// <summary>
-/// Serviço responsável por gerenciar os usuários do sistema,
-/// incluindo operações de carregamento, salvamento, autenticação e cadastro.
+/// Classe responsável pela gestão dos usuários do sistema, incluindo autenticação,
+/// cadastro e persistência dos dados em arquivo JSON.
 /// </summary>
 public class UserService
 {
     /// <summary>
-    /// Caminho do arquivo JSON onde os dados dos usuários são armazenados.
+    /// Caminho do arquivo JSON utilizado para armazenar os dados dos usuários.
     /// </summary>
     private const string FilePath = "users.json";
 
     /// <summary>
-    /// Lista em memória dos usuários registrados no sistema.
+    /// Lista que mantém os usuários cadastrados em memória.
     /// </summary>
     public List<User> Users { get; private set; } = new List<User>();
 
     /// <summary>
-    /// Carrega os usuários do arquivo JSON para a lista <see cref="Users"/>.
-    /// Caso o arquivo não exista ou haja erro, a lista permanece vazia.
+    /// Carrega os usuários do arquivo JSON para a memória.
+    /// Caso o arquivo não exista ou ocorra algum erro, mantém a lista vazia.
     /// </summary>
     public void LoadUsers()
     {
@@ -42,7 +42,8 @@ public class UserService
     }
 
     /// <summary>
-    /// Salva a lista atual de usuários no arquivo JSON especificado por <see cref="FilePath"/>.
+    /// Salva os dados da lista de usuários no arquivo JSON.
+    /// Substitui completamente o conteúdo anterior.
     /// </summary>
     public void SaveUsers()
     {
@@ -58,17 +59,17 @@ public class UserService
     }
 
     /// <summary>
-    /// Solicita as credenciais do usuário via console, verifica se correspondem a um usuário existente
-    /// e retorna o usuário autenticado ou <c>null</c> caso as credenciais sejam inválidas.
+    /// Realiza o processo de autenticação do usuário.
+    /// Solicita nome de usuário e senha, e busca correspondência na lista de usuários.
     /// </summary>
-    /// <returns>O usuário autenticado ou <c>null</c> se falhar na autenticação.</returns>
+    /// <returns>
+    /// Retorna o objeto <see cref="User"/> correspondente se a autenticação for bem-sucedida,
+    /// ou <c>null</c> se falhar.
+    /// </returns>
     public User? Login()
     {
-        Console.Write("Usuário: ");
-        string username = Console.ReadLine() ?? "";
-
-        Console.Write("Senha: ");
-        string password = Console.ReadLine() ?? "";
+        string username = InputHelper.ReadNonEmptyString("Usuário: ");
+        string password = InputHelper.ReadNonEmptyString("Senha: ");
 
         foreach (var user in Users)
         {
@@ -84,23 +85,38 @@ public class UserService
     }
 
     /// <summary>
-    /// Solicita via console a criação de um novo usuário com nome e senha,
-    /// adiciona-o à lista de usuários, salva os dados e retorna o novo usuário criado.
+    /// Realiza o cadastro de um novo usuário no sistema.
+    /// Garante que o nome de usuário seja único e que a senha tenha pelo menos 6 caracteres.
     /// </summary>
-    /// <returns>O novo usuário registrado.</returns>
+    /// <returns>
+    /// Retorna o objeto <see cref="User"/> recém-cadastrado.
+    /// </returns>
     public User Register()
     {
-        Console.Write("Novo usuário: ");
-        string username = Console.ReadLine() ?? "";
+        string username = InputHelper.ReadNonEmptyString("Novo usuário: ");
 
-        Console.Write("Nova senha: ");
-        string password = Console.ReadLine() ?? "";
+        // Validação para evitar nomes de usuários duplicados.
+        if (Users.Exists(u => u.Username == username))
+        {
+            Console.WriteLine("Erro: este nome de usuário já está em uso.");
+            return Register();
+        }
+
+        string password;
+
+        // Solicita a senha até que ela atenda ao requisito mínimo de 6 caracteres.
+        do
+        {
+            password = InputHelper.ReadNonEmptyString("Nova senha (mínimo 6 caracteres): ");
+            if (password.Length < 6)
+                Console.WriteLine("Erro: senha deve ter pelo menos 6 caracteres.");
+        } while (password.Length < 6);
 
         var newUser = new User { Username = username, Password = password };
         Users.Add(newUser);
         SaveUsers();
-        Console.WriteLine("Cadastro realizado com sucesso!\n");
 
+        Console.WriteLine("Cadastro realizado com sucesso!\n");
         return newUser;
     }
 }
