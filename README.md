@@ -74,3 +74,9 @@ SpadaApp/
 - O sistema salva automaticamente as alterações realizadas após cada ação do usuário.
 - O arquivo users.json será criado na primeira execução, caso não exista.
 - Todo o fluxo é orientado por menus e instruções exibidas no console.
+
+### Considerações Finais
+
+Caso haja algum problema ao acessar o arquivo .docx, ele pode ser acessado por meio do seguinte link:
+
+https://docs.google.com/document/d/1RrrwJw2sb5JfEnJVaT2KMPq2OvgWjpJiMxJW8Go_OG8/edit?usp=sharing
