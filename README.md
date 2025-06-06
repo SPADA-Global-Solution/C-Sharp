@@ -27,7 +27,9 @@ Todos os dados são persistidos automaticamente em um arquivo JSON, garantindo q
 
 1. Clone o repositório com o comando:
 
+```
 git clone https://github.com/SPADA-Global-Solution/C-Sharp.git
+```
 
 2. Abra o projeto:
   
@@ -77,6 +79,7 @@ SpadaApp/
 
 ### Considerações Finais
 
-Caso haja algum problema ao acessar o arquivo .docx, ele pode ser acessado por meio do seguinte link:
+Caso haja algum problema ao acessar o arquivo .docx, ou o vídeo do Youtube, eles podem ser acessados por meio dos seguintes links:
 
-https://docs.google.com/document/d/1RrrwJw2sb5JfEnJVaT2KMPq2OvgWjpJiMxJW8Go_OG8/edit?usp=sharing
+- [**Doc**](https://docs.google.com/document/d/1RrrwJw2sb5JfEnJVaT2KMPq2OvgWjpJiMxJW8Go_OG8/edit?usp=sharing)
+- [**Vídeo**](https://www.youtube.com/watch?v=oakHe0I5uYE)
